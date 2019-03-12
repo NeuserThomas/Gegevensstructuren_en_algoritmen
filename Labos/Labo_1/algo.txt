@@ -1,0 +1,6 @@
+digraph {
+rankdir="LR";
+"0"[label="",shape=diamond];
+"0" -> "1";
+"1" [shape=point];
+}

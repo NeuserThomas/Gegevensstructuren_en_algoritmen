@@ -1,0 +1,62 @@
+digraph {
+rankdir="LR";
+"0"[label="",shape=diamond];
+"0" -> "1";
+subgraph cluster_1 {
+rankdir="LR";
+"1" [label="55",color=white];
+"1v" [shape=diamond,label=""];
+"1" -> "1v" [color=white];
+}
+"1v" -> "2" [lhead=cluster_1 ltail=cluster_2];
+subgraph cluster_2 {
+rankdir="LR";
+"2" [label="45",color=white];
+"2v" [shape=diamond,label=""];
+"2" -> "2v" [color=white];
+}
+"2v" -> "3" [lhead=cluster_2 ltail=cluster_3];
+subgraph cluster_3 {
+rankdir="LR";
+"3" [label="35",color=white];
+"3v" [shape=diamond,label=""];
+"3" -> "3v" [color=white];
+}
+"3v" -> "4" [lhead=cluster_3 ltail=cluster_4];
+subgraph cluster_4 {
+rankdir="LR";
+"4" [label="25",color=white];
+"4v" [shape=diamond,label=""];
+"4" -> "4v" [color=white];
+}
+"4v" -> "5" [lhead=cluster_4 ltail=cluster_5];
+subgraph cluster_5 {
+rankdir="LR";
+"5" [label="45",color=white];
+"5v" [shape=diamond,label=""];
+"5" -> "5v" [color=white];
+}
+"5v" -> "6" [lhead=cluster_5 ltail=cluster_6];
+subgraph cluster_6 {
+rankdir="LR";
+"6" [label="15",color=white];
+"6v" [shape=diamond,label=""];
+"6" -> "6v" [color=white];
+}
+"6v" -> "7" [lhead=cluster_6 ltail=cluster_7];
+subgraph cluster_7 {
+rankdir="LR";
+"7" [label="45",color=white];
+"7v" [shape=diamond,label=""];
+"7" -> "7v" [color=white];
+}
+"7v" -> "8" [lhead=cluster_7 ltail=cluster_8];
+subgraph cluster_8 {
+rankdir="LR";
+"8" [label="7",color=white];
+"8v" [shape=diamond,label=""];
+"8" -> "8v" [color=white];
+}
+"8v" -> "9" [lhead=cluster_8 ltail=cluster_9];
+"9" [shape=point];
+}
